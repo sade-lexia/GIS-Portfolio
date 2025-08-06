@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Baltimore City Food Desert Mapper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <!-- jQuery + Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Geocoder -->
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Bootstrap’s form-check form-check-inline; styles the checkbox to look nice and display inline (side by side) -->
+  <div class="container-fluid">
+    <h4 class="my-3">Baltimore City Food Desert Mapper</h4>
+  <!-- Show/hide bus routes layer -->
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="toggleBus" checked>
+      <label class="form-check-label" for="toggleBus">Show Bus Routes</label>
+    </div>
+  <!-- Lets the user show/hide the income (census tract) polygons -->
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="toggleIncome" checked>
+      <label class="form-check-label" for="toggleIncome">Show Income Zones</label>
+    </div>
+  <!-- Toggles your 1-mile buffers/red tint overlay -->
+    <div class="form-check form-check-inline">
+      <button class="btn btn-primary btn-sm" id="toggleDesert">Toggle Food Desert Zones</button>
+    </div>
+  </div>
+
+  <div id="map"></div>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

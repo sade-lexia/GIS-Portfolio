@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>About Sade Gay</title>
+    <style>
+
+
+/*add green background with 40% opacity to entire body of webpage*/
+body{
+  background: rgba(0, 128, 0, 0.4);
+}
+
+/* links are NOT underlined; hover mouse over link and highlight shade of pink */
+a{
+    text-decoration: none;
+}
+a:hover {
+    text-decoration:underline; color:rgb(219, 82, 127);
+}
+
+/*first letter in each paragraph starts with a "drop cap" 1.5x the size of the normal letter*/
+p.intro::first-letter {
+    color: purple;
+    font-size: 150%;
+}
+/*Make font size of the paragraphs 25px*/
+p {
+  font-size: 25px;
+}
+
+/*float profile image left, remove clear property*/
+img.profile-image {
+    float: left; 
+    margin-right: 20px;
+  }
+
+/*Underline the unordered list, change font size to 25 pixels, change font family*/
+ul li {
+    text-decoration: underline; 
+    font-size: 25px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+/*the height and width of the place images under '3 places to visit' are fixed*/
+.place-image{
+  width: 400px;
+  height: 300px;
+}
+
+/*Insert block element for favorite songs*/
+div {
+  width:30%;  
+  display:inline-block;
+}
+
+    </style>
+</head>
+<body>
+
+ <img src="Images/Sade_Gay_Photo.jpeg" alt="Sade Photo" class="profile-image" width="200px" height="300px">
+ <h1 style="color: purple;">Sadé Lexia Gay</h1>   
+ <h2> MSGIS Student, University of Maryland<br> GIS Technician at ASRC Federal </h2>
+ <p class="intro"> Sadé Gay is a student at <b>The University of Maryland, College Park</b> majoring in GIS. Her professional interests include
+GIS and it's applications in climate science, disaster management, and national security. She currently works as a federal contractor
+for the <b>U.S. Census Bureau</b> managing and maintining the CENSUS Tiger database. She graduated from the University of Maryland in 2022 with a B.S
+in Geographical Sciences with a background in <b>Environmental Sciences and Meteorology</b>. Some of her hobbies include spending time with her pug 
+<i>Bruce Wayne</i> (Yes, he is named after Batman) on scenic trails, baking, and more recently learning pottery.</p>
+<p class="intro"> If you want to be friends, <a href="https://www.linkedin.com/in/sade-gay" target="_blank">lets connect!</a></p>
+
+<h2> Courses taken in MS GIS so far:</h2>
+<ul>
+    <li>GEOG 653: Spatial Analysis</li>
+    <li>GEOG 646: Introduction to programming for GIS</li>
+</ul>
+
+<h2>Three places I recommend visiting:</h2>
+<ul>
+  <li>
+    <h3>El Salvador</h3>
+    <div>
+      <img src="Images/El_Salvador_photo.jpeg" alt="El Salvador Photo" class="place-image">
+      </div>
+  </li>
+  <li>
+    <h3>Los Angeles, California</h3>
+    <div>
+      <img src="Images/Los_Angeles_photo.jpeg" alt="Los Angeles Photo" class="place-image">
+    </div>
+  </li>
+  <li>
+    <h3>Pennsylvania</h3>
+    <div>
+      <img src="Images/Philly_photo.JPG" alt="Philly Photo" class="place-image">
+    </div>
+  </li>
+</ul>
+
+<h2> My favorite movies:</h2>
+<ol>
+  <li><b>The Karate Kid (1984) <a href="https://www.imdb.com/title/tt0087538/?ref_=fn_all_ttl_2" style="color:purple;">(IMDb)</a> </b></li>
+  <dl>
+    <dt><b>Director</b></dt>
+    <dd>John G. Advilsen</dd> 
+    <dt><b>Genre</b></dt>
+    <dd>Coming of Age | Teen Drama | Action | Martial Arts</dd>
+  </dl>
+
+  <li><b>The Return of the Living Dead (1985) <a href="https://www.imdb.com/title/tt0089907/?ref_=fn_all_ttl_2" style="color:purple;">(IMDb)</a></b></li>
+  <dl>
+    <dt><b>Director</b></dt>
+    <dd>Dan O'Bannon</dd>
+    <dt><b>Genre</b></dt>
+    <dd>Zombie Horror | Terror</dd>
+    </dl>
+
+  <li><b>The Thing (1982)<a href="https://www.imdb.com/title/tt0084787/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_The%2520thi" style="color:purple;">(IMDb) </a></b></li>
+  <dl>
+    <dt><b>Director</b></dt>
+    <dd>John Carpenter</dd>
+    <dt><b>Genre</b></dt>
+    <dd>Sci-Fi | Alien Invasion | Mystery</dd>
+    </dl>
+</ol>
+
+<h2>Some of my all-time <i>favorite</i> songs: </h2>
+<div style="margin-right:20px;">
+  <h3>Chicago</h3>
+  <iframe style="border-radius:12px;" src="https://open.spotify.com/embed/track/0KMGxYKeUzK9wc5DZCt3HT?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
+
+<div style="margin-left:20px;">
+  <h3>Radiohead</h3> 
+  <iframe style="border-radius:12px;" src="https://open.spotify.com/embed/track/4oXg7xT4ksBxHTx8PcmSXw?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
+
+<h2> My favorite quote:</h2>
+<blockquote cite="https://www.goodreads.com/quotes/tag/humor">
+  <p style="font-size:25px;">
+  "You only live once, and if you do it right, once is enough."
+  <br>
+  <i>- Mae West</i>
+  </p>
+</blockquote>
+
+</body>
+</html>
